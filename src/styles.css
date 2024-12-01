@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Cheap Potatoes';
+    src: url('fonts/Cheap Potatoes Black.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #696d7d;
+    color: #2b1810; /* Brun très foncé */
+    font-family: 'Cheap Potatoes', cursive;
+    overflow-x: hidden;
+    transition: background-color 0.5s ease;
+}
+
+#scroll-container {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    min-height: 500vh;
+    padding-top: 100vh;
+}
+
+h1 {
+    font-size: 7rem; /* Police plus grande pour le titre */
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    text-shadow: 2px 2px 4px rgba(43, 24, 16, 0.3); /* Ombre brune */
+    z-index: 2;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+
+h1.scrolled {
+    opacity: 0;
+}
+
+.quote-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.quote {
+    font-size: 3rem; /* Police plus grande pour les citations */
+    margin: 40vh 0;
+    padding-top: 20vh;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(43, 24, 16, 0.2); /* Légère ombre brune */
+}
+
+.quote.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#three-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
