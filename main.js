@@ -119,7 +119,7 @@ const loader = new GLTFLoader();
 loader.setDRACOLoader(dracoLoader);
 
 // Load potatoes
-loader.load('models/patates.gltf', 
+loader.load('/you-are-potato/models/patates.gltf', 
     (gltf) => {
         console.log('GLTF loaded successfully');
         

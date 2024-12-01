@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Cheap Potatoes';
-    src: url('fonts/Cheap Potatoes Black.ttf') format('truetype');
+    src: url('/you-are-potato/fonts/Cheap Potatoes Black.ttf') format('truetype');
 }
 
 * {
